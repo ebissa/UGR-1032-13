@@ -1,0 +1,961 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:0px;
+    height: 100%;
+    width: 100%;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 100%;
+    width: 100%; 
+}
+header{
+    position: fixed;
+    top:0;right:0;left:0;
+    height:3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 2;
+    background-color: rgba(37, 35, 35, 0.995);
+}
+header .logo{
+    position: fixed;
+    display: block;
+    width: 7%;
+    position: absolute;
+    top:10%;
+    margin-right: 6%;
+}
+header nav{
+    position: fixed;
+    margin-top:2%;
+    float:right;
+    right: 3%;
+    display: flexbox;
+}
+header nav a{
+    font-size: 4vh;
+    margin-left: 2vh;
+    color: gray;
+    display: inline-block;
+    text-decoration: none;
+}
+header nav a:hover{
+    color:orangered;
+    font-weight: bolder;
+}
+.menu{
+    display: none;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+    left: -3rem;
+
+}
+.home{
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    min-height: 100px;
+    width: 100%;
+    z-index: 1;
+    overflow:scroll;
+}
+.background-video{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    display: flexbox;
+}
+main .main-text{
+    display: block;
+    color: white;
+    font-size: 3vw;
+    min-width: 300px;
+    align-items: center;
+    position: absolute;
+    bottom: 30rem;
+    text-align: center;
+    height:2vh;
+    top: 0;
+    color: orangered;
+    text-shadow: 0.1rem 0.1rem black;
+    max-height: 100px;
+    min-height: 840px;
+
+    
+    
+
+    
+    
+}
+.main-text h1{
+    min-height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    padding-left: 3rem;
+    font-size: 4vw;
+    padding-top: 10%;
+    width: 50vw;
+    color: rgba(255, 136, 0, 0.825);}
+.main-text h2{
+        max-width: 2;
+        width: 40vw;
+        color: white;
+        height: auto;
+    
+    
+}
+.home footer{
+    bottom: 0px;
+    height: 20vh;
+}
+.main-text h1{
+    min-height: 50px;
+    display: inline-flex;
+    margin-top: 50px ;
+    position: relative;
+    top: 50px;
+    padding-left: 3rem;
+    font-size: 4vw;
+    padding-top: 10%;
+    width: 50vw;
+    color: rgba(255, 136, 0, 0.825);
+    
+    
+}
+
+audio{
+    display:block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    color:black;
+    height: 3vh;
+    display: flex;
+}
+footer{
+    overflow:unset;
+    position:static;
+    bottom: 0%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    height: 20vh;
+    font-size: x-large;
+    padding-bottom: 3vh;
+    padding-top: 2rem;
+    width: 100%;
+
+
+    
+}
+footer a{
+    margin:1.5rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: orangered;
+
+}
+footer a:hover{
+    margin:1.5rem;
+    color: white;
+    font-size: 1.7rem;
+}
+@media (max-width:1320px){
+.home section{
+    height: 30px;
+}
+main .main-text{
+        display: relative;
+        color: white;
+        bottom: 50%;
+        font-size: 3vw;
+        min-width: 300px;
+        min-height: 200px;
+        align-items: center;
+        position: absolute;
+        bottom: 30rem;
+        text-align: center;
+        height:2px;
+        top: 0;
+        color: orangered;
+        text-shadow: 0.1rem 0.1rem black;
+       
+}
+.home footer{
+    font-size: 4vw;
+}
+.order-h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10rem;
+    color: orangered;
+    text-shadow: 0.1rem 0.1rem gray;
+}
+.delivery-pic{
+    display: flex;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    
+}
+.delivery-pic img{
+    width: 20rem;
+    height: 30rem;
+    
+}
+.order.form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.order .form form{
+    padding:2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-basis: 100%;
+    gap:1.5rem;
+    border-radius: .5rem;
+    width: 40rem;
+    height:90vh;
+
+}
+
+
+
+.order form .inputBox{
+    display: flex;
+
+}
+
+.order h2{
+    text-align: center;
+}
+}    
+
+@media (max-width:1000px){
+
+    
+
+header nav{
+ margin-top: 0;
+}
+
+
+header nav  a{
+    display: none;
+    padding: 1px;
+    margin-top: 0.3;
+    margin-right:0rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+    
+}
+header nav .active a{
+    display: block;
+    background-color:  rgba(37, 35, 35, 0.995);
+}
+
+.background-video{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 10rem;
+    display: flexbox;
+    height: fit-content;
+}
+
+.menu{
+    display: inline-block;
+    position: absolute;
+    top:1%;
+    right: 2%;
+
+}
+main .main-text{
+    display: block;
+    color: white;
+    margin-top: 65%;
+    font-size: 3vw;
+    padding-bottom: 10vh;
+    align-items: center;
+    position: absolute;
+    bottom: 30rem;
+    text-align: center;
+    height:50%;
+    background-color: #333;
+    color: orangered;
+    text-shadow: 0.1rem 0.1rem black;
+    width: 100%; 
+}
+.main-text h1 {
+    min-height: 50px;
+    display: inline-flex;
+    margin-top: 0px;
+    position: relative;
+    top: 50px;
+    padding-left: 3rem;
+    font-size: 4vw;
+    padding-top: 0;
+    width: 50vw;
+    color: orangered;
+}
+.home footer{
+    margin-top:35vh;
+}}
+
+
+  
+.order .form form .inputBox input,textarea{
+    padding:1rem;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width:30%;
+}
+  
+.order .form form textarea{
+    width: 24%;
+    resize: none;
+    height:5rem;
+   
+    
+}
+  
+.order .form form .btn{
+    background:none;
+    background-color: orange;
+    color: white;
+    width: 5rem;
+    border-color: gray;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+  
+.order .form form .btn:hover{
+    background-color: orangered;
+    width:6rem;
+    height:2rem;
+}
+
+.order-h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10rem;
+    color: orangered;
+    text-shadow: 0.1rem 0.1rem gray;
+}
+.delivery-pic{
+    display: flex;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    
+}
+.delivery-pic img{
+    width: 20rem;
+    height: 30rem;
+    
+}
+
+
+     
+
+
+
+
+
+.restaurant-img{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+.about-text{
+    background-color: rgba(0,0,0,0.4);
+    width: 80vw;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    color: white;
+    padding:5rem 0 16.19rem 0;
+    object-fit: cover;
+    top:5rem;
+    height: 57vh;
+    display: flexbox;
+
+
+
+}
+.about-text h1{
+    color: rgb(251, 91, 4);
+    font-weight:800px;
+    font-size: 2rem;
+    padding-left: 7rem;
+    text-shadow: 0.3rem 0.1rem black;
+
+}
+.about-text h2{
+    color: white;
+    width: 23rem;
+    font-size: 3rem;
+    padding-left: 2.5rem;
+    text-shadow: 0.2rem 0.1rem black;
+
+}
+.about-text p{
+    display: inline-block;
+    width: 22rem;
+    padding-left: 4rem;
+    font-size: x-large;
+
+}
+.about-text h3{
+    color:orangered ;
+    font-size: larger;
+}
+.about-text li{
+    padding: 1rem o;
+}
+.customers-review{
+    color: orangered;
+   background-color: rgba(37, 35, 35, 0.995);
+   padding-top: 2rem;
+   z-index: 1;
+}
+.customers-review table tr{
+    text-align: center;
+    padding-left: 5rem;
+    font-weight: bolder;
+}
+.customers-review table td{
+    padding: 0 5rem;
+}
+.customers-review table td p{
+    display: inline-block;
+}
+.customers-review table td img{
+    border-radius: 50%;
+}
+@media(max-width:600px){
+.about-page{
+margin-top: 12vh;
+}
+.about-text{
+height: 90vh;
+}
+.about-page footer{
+height: 70vh;
+}
+.restaurant-img{
+    object-fit: cover;
+    width: 100%;
+    height: 200vh;
+}
+.about-text{
+    font-size: 10vw;
+}
+.customers-review{
+    font-size: 4vh;
+}
+.about footer{
+    font-size: 7vh;
+}
+
+}
+
+.menu-section h1{
+    padding-top: 8rem;
+    text-align: center;
+    color: orangered;
+    font-size:2rem;
+
+}
+.menu-section h3{
+    text-align: center;
+    color: black;
+    font-size:1.5rem;
+
+}
+.menu-nav{
+    margin: 0  5rem 0 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+menu-nav h4{
+ display: inline;
+
+}
+main div section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-section h4{
+    color: rgba(250, 99, 44, 0.705);
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-between;
+    font-size: 120%;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 100px;
+
+
+}
+@media (max-width:440px) {
+.menu-nav{
+        margin: 0  5rem 0 8rem;
+        display: block;
+
+    }
+    .menu-section h4{
+        display: inline-block;
+        height: 2vh;
+        width: 1vw;
+        width: 100vw;
+        justify-content: space-between;
+        font-size: 120%;
+        border:1px solid black;
+        padding: 4vh;
+        background-color: #333;
+        border-radius: 10px;
+    
+    
+    }
+}
+
+.menu-section h4:hover{
+    color: orangered;
+    cursor:pointer;
+}
+
+.foods table tr{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    
+}
+.off{
+    display: none;
+}
+.on{
+    text-align: center;
+    padding: 4.7vw;
+    color:orangered;
+    font-weight: bold;
+    font-size: 3vh;
+    box-sizing: border-box;
+    flex-basis: 25%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    box-sizing: border-box;
+
+
+}
+
+.foods table td img{
+    width:12vw;
+    height:12vw;
+    display: inline-block;
+    margin: 0.5rem;
+    margin-bottom: 0;
+    margin-top: 3vh;
+    border-radius: 20%;
+}
+
+.foods table td p{
+    display: inline-block;
+    margin: 0;
+
+}
+@media (max-width:1030px) {
+.foods table td img{
+        width:40vw;
+        height:20vh;
+        display: inline-block;
+        margin: 0.5rem;
+        margin-bottom: 0;
+        margin-top: 3vh;
+        border-radius: 20%;
+}  
+}
+
+.h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10rem;
+    color: orangered;
+    text-shadow: 0.1rem 0.1rem gray;
+}
+
+.reservation .form{
+    padding:2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.2rem;
+    border-radius: .5rem;
+    
+
+}
+.reservation .reservation-img img{
+    height: 35rem;
+    width:35rem;
+    flex-basis: auto;
+}
+
+.reservation form{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    padding:1rem;
+    padding-left: 0;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    
+}
+
+
+.reservation form .inputBox{
+    box-sizing: border-box;
+    display: flex;
+}
+    
+
+
+  
+.reservation .form form .inputBox input, .reservation .form form textarea{
+    padding:1rem;
+    margin:1rem 0;
+    font-size: 1.2rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width:25%;
+    
+}
+  
+.reservation .form form textarea{
+    width: 55%;
+    resize: none;
+    height:8rem;
+    
+    
+}
+  
+.reservation .form form .btn{
+    background:none;
+    background-color: orange;
+    color: black;
+    width: 10rem;
+    height: 3rem;
+    border-color: gray;
+    border-radius: 0.5rem;
+}
+  
+.reservation .form form .btn:hover{
+    color: white;
+
+}
+
+.reservation .form form .inputBox input {
+    height: 2rem;
+    width: 15rem;
+    border: 1px solid #000;
+    margin-top: 1rem;
+   
+}
+
+.reservation .form form .inputBox div{
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 20%;
+}
+#error{
+    margin-left: 40%;
+    width:100%;
+    color: red;
+    font-size:5vh ;
+    background-color: black;
+}
+.order-h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10rem;
+    color: orangered;
+    text-shadow: 0.1rem 0.1rem gray;
+}
+.delivery-pic{
+    display: flex;
+    flex-basis: 60%;
+    box-sizing: border-box;
+    
+}
+.delivery-pic img{
+    width: 40rem;
+    height: 50rem;
+    
+}
+.order section{
+    display: flex;
+}
+.order.form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.order .form form{
+    padding:2rem;
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    gap:1.5rem;
+    border-radius: .5rem;
+    width: 40rem;
+
+}
+
+
+
+.order form .inputBox{
+    display: flex;
+
+}
+
+.order h2{
+    text-align: center;
+}
+  
+.order .form form .inputBox input,textarea{
+    padding:0;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width:50%;
+    height:4rem;
+}
+  
+.order .form form textarea{
+    width: 70%;
+    resize: none;
+    height:5rem;
+   
+    
+}
+  
+.order .form form .btn{
+    background:none;
+    background-color: orange;
+    color: white;
+    width: 5rem;
+    border-color: gray;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+  
+.order .form form .btn:hover{
+    background-color: orange;
+    width:6rem;
+    height:2rem;
+}
+.order.footer{
+    width: 100%;
+}
+@media (max-width:900px) {
+.order section{
+        display: flex;
+        flex-wrap: wrap;
+}
+.order .form form{
+    flex-basis: 100%;
+}
+.order .form form .inputBox input,textarea{
+    margin:1rem 0;
+    font-size: 3vh;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width:30%;
+    height:5vh;
+}
+  
+.order .form form textarea{
+    width: 70%;
+    resize: none;
+    height:5rem;
+   
+    
+}
+  
+.order .form form .btn{
+    background:none;
+    background-color: orange;
+    color: white;
+    width: 5rem;
+    border-color: gray;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+}
+
+.contact .form form{
+    padding:2rem;
+    padding-left: 25%;
+    padding-right: 25%;
+    align-content: center;
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-basis: 100%;
+    gap:1.5rem;
+    border-radius: .5rem;
+    
+}
+.contact section{
+    display:flex;
+}
+.contact .form form .inputBox{
+    display: flex;
+    flex-basis: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+label{
+    width: 4rem;
+    max-width: 4rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 0.2rem;
+}
+
+.contact .form form .inputBox input,textarea{
+    padding:1rem;
+    width:16vw;
+    margin:1rem 0;
+    font-size: 2vh;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    
+}
+.contact .form form textarea{
+    width: 70%;
+    resize: none;
+    height:10rem;
+   
+    
+}
+.contact .form form .btn{
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    background:none;
+    background-color: orange;
+    width: 15rem;
+    border-color: gray;
+    border-radius: 0.5rem;
+    height: 3rem;
+    margin-left: 30%;
+    margin-left: 30%;
+}
+
+
+.contact{
+    height:50rem;
+    width: 100%;
+    padding-top: 0;
+}
+.contact .form form .btn:hover{
+    background-color: orange;
+    color: white;
+    
+}
+@media(max-width:900px){
+
+.contact .form form .inputBox input,textarea{
+        padding:2vw;
+        width:40vw;
+        margin:1rem 0;
+        font-size: 90%;
+        color:#333;
+        text-transform: none;
+        border:.1rem solid rgba(0,0,0,.3);
+        border-radius: .5rem;
+        
+}
+.contact .form form textarea{
+        width: 70%;
+        resize: none;
+        height:50%;
+       
+        
+}
+.contact .form form .btn{
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        background:none;
+        background-color: orange;
+        width: 15rem;
+        border-color: gray;
+        border-radius: 0.5rem;
+        height: 3rem;
+        margin-left: 30%;
+}
+footer{
+    width: 100%;
+}
+.contact .form form .btn{
+    font-size: 2vh;
+    font-weight: bold;
+    display: block;
+    background:none;
+    background-color: orange;
+    width: 25vw;
+    border-color: gray;
+    border-radius: 0.5rem;
+    height: 4vh;
+    margin-left: 30%;
+}
+
+   
+    
+}
+
+
